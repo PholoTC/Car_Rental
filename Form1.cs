@@ -16,5 +16,22 @@ namespace Car_Rental
         {
             InitializeComponent();
         }
+
+        private void btnAddCustomer_Click(object sender, EventArgs e)
+        {
+            frm_Add_Customers frm_Add_Customers = new frm_Add_Customers();  
+            frm_Add_Customers.ShowDialog();
+            this.Close();
+            this.Hide();
+
+        }
+
+        private void btnAddCars_Click(object sender, EventArgs e)
+        {
+            frm_Add_Car frm_Add_Car = new frm_Add_Car();    
+            frm_Add_Car.ShowDialog();   
+            this.Close();
+            this.Hide();    
+        }
     }
 }

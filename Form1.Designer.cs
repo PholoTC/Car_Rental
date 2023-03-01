@@ -44,7 +44,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(462, 23);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(593, 281);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -59,6 +59,7 @@
             this.btnAddCustomer.TabIndex = 1;
             this.btnAddCustomer.Text = "Add Customer";
             this.btnAddCustomer.UseVisualStyleBackColor = true;
+            this.btnAddCustomer.Click += new System.EventHandler(this.btnAddCustomer_Click);
             // 
             // btnAddCars
             // 
@@ -71,6 +72,7 @@
             this.btnAddCars.TabIndex = 2;
             this.btnAddCars.Text = "Add Car";
             this.btnAddCars.UseVisualStyleBackColor = true;
+            this.btnAddCars.Click += new System.EventHandler(this.btnAddCars_Click);
             // 
             // btnInvoice
             // 
