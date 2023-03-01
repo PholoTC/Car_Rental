@@ -1915,6 +1915,7 @@
             // txtVin
             // 
             this.txtVin.Location = new System.Drawing.Point(1037, 690);
+            this.txtVin.MaxLength = 10;
             this.txtVin.Name = "txtVin";
             this.txtVin.Size = new System.Drawing.Size(344, 44);
             this.txtVin.TabIndex = 23;

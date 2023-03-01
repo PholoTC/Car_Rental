@@ -44,29 +44,33 @@ namespace Car_Rental
             try
             {
                 con.Open();
-                SqlCommand com = new SqlCommand("SP_GetCarByVin '" + car.Car_Vin + "', ");
+                SqlCommand com = new SqlCommand("SP_GetCarByVinNumber '" + car.Car_Vin + "'",con);
                 SqlDataReader reader = com.ExecuteReader();
-                con.Close();
+
+              
                 if (reader.HasRows) 
-                { 
-                    MessageBox.Show("This Car already exists in the system","Error",MessageBoxButtons.OK)
+                {
+                    MessageBox.Show("This Car already exists in the system", "Error", MessageBoxButtons.OK);
+                    reader.Close();
+                    con.Close();
                 }
                 else
                 {
+                    reader.Close();
+                    con.Close();
                     try
-                    {
-                        con.Open();
+                {
+                       con.Open();
                         SqlCommand comm = new SqlCommand("SP_InsertCar '" + car.Car_Make + "', '" +
                             car.Car_Model + "', '" + car.Car_Year + "', '" + car.Car_Color +
                             "', '" + car.Car_Transmission + "', '" + car.Car_Vin + "'", con);
-                        com.ExecuteNonQuery();
+                        comm.ExecuteNonQuery();
 
                         MessageBox.Show("Car Saved in the system", "Success", MessageBoxButtons.OK);
                         con.Close();
                     }
                     catch (Exception ex) { MessageBox.Show("Failed to Connect to DB.\n" + ex.ToString()); }
                 }
-
                 
             }
             catch (Exception ex) { MessageBox.Show("Couldn't Find Vin Number.\n" + ex.ToString()); }
