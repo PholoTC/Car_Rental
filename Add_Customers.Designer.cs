@@ -1907,6 +1907,7 @@
             this.btnBackToMenu.TabIndex = 29;
             this.btnBackToMenu.Text = "<- Back to Menu";
             this.btnBackToMenu.UseVisualStyleBackColor = true;
+            this.btnBackToMenu.Click += new System.EventHandler(this.btnBackToMenu_Click);
             // 
             // pictureBox1
             // 

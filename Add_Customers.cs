@@ -16,5 +16,14 @@ namespace Car_Rental
         {
             InitializeComponent();
         }
+
+        private void btnBackToMenu_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            this.Hide();
+            frm_Menu frm_Menu = new frm_Menu(); 
+            frm_Menu.ShowDialog();
+            
+        }
     }
 }

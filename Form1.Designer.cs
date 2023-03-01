@@ -1,6 +1,6 @@
 ﻿namespace Car_Rental
 {
-    partial class MenuForm
+    partial class frm_Menu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Menu));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnAddCustomer = new System.Windows.Forms.Button();
             this.btnAddCars = new System.Windows.Forms.Button();
@@ -106,7 +106,7 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "label2";
             // 
-            // MenuForm
+            // frm_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -122,7 +122,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "MenuForm";
+            this.Name = "frm_Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rental Menu";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

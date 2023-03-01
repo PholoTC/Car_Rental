@@ -42,7 +42,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txtCarModel = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtVin = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.cbYear = new System.Windows.Forms.ComboBox();
             this.cbColor = new System.Windows.Forms.ComboBox();
@@ -94,6 +94,7 @@
             this.btnSaveCar.TabIndex = 8;
             this.btnSaveCar.Text = "Save";
             this.btnSaveCar.UseVisualStyleBackColor = true;
+            this.btnSaveCar.Click += new System.EventHandler(this.btnSaveCar_Click);
             // 
             // btnBackToMenu
             // 
@@ -106,6 +107,7 @@
             this.btnBackToMenu.TabIndex = 7;
             this.btnBackToMenu.Text = "<- Back to Menu";
             this.btnBackToMenu.UseVisualStyleBackColor = true;
+            this.btnBackToMenu.Click += new System.EventHandler(this.btnBackToMenu_Click);
             // 
             // pictureBox1
             // 
@@ -1910,12 +1912,12 @@
             this.label7.TabIndex = 18;
             this.label7.Text = "Year";
             // 
-            // textBox6
+            // txtVin
             // 
-            this.textBox6.Location = new System.Drawing.Point(1037, 690);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(344, 44);
-            this.textBox6.TabIndex = 23;
+            this.txtVin.Location = new System.Drawing.Point(1037, 690);
+            this.txtVin.Name = "txtVin";
+            this.txtVin.Size = new System.Drawing.Size(344, 44);
+            this.txtVin.TabIndex = 23;
             // 
             // label8
             // 
@@ -1997,7 +1999,7 @@
             this.Controls.Add(this.cbTransmission);
             this.Controls.Add(this.cbColor);
             this.Controls.Add(this.cbYear);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txtVin);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtCarModel);
@@ -2037,7 +2039,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtCarModel;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtVin;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox cbYear;
         private System.Windows.Forms.ComboBox cbColor;
